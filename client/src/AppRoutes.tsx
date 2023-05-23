@@ -3,7 +3,7 @@ import ContextTable from "./components/ContextTable";
 import { ChecklistsTable, EmploeesTable, CollectorsTable, ItinerariesTable } from "./components/Tables";
 import CashOrdersTable from "./components/Tables/DCO";
 import HomePage from "./components/HomePage";
-import { CreateCollector, CreateEmployee, CreateItinerary } from "./components/CreateRows";
+import { CreateCollector, CreateEmployee, CreateItinerary, CreateDCO, CreateChecklist } from "./components/CreateRows";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -40,8 +40,16 @@ const AppRoutes = createBrowserRouter([
     element: <ContextTable component={ChecklistsTable} />
   },
   {
+    path: "/checklists/add/",
+    element: <CreateChecklist />
+  },
+  {
     path: "/dco/",
     element: <ContextTable component={CashOrdersTable} />
+  },
+  {
+    path: "/dco/add/",
+    element: <CreateDCO />
   },
   {
     path: "*",

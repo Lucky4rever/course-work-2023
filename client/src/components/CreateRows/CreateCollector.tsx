@@ -38,7 +38,7 @@ const CreateCollector = () => {
 
   return (
     <div className="form-layout">
-      <h1 className="title">Новий працівник</h1>
+      <h1 className="title">Нова інкасаторська служба</h1>
       <form className="styled-form" onSubmit={handleSubmit}>
         <input className="styled-input" value={name} type="text" name="name" placeholder="Назва організації" onChange={(e)=>{setName(e.target.value)}} />
         <div className="collapse">
