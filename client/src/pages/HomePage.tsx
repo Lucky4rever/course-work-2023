@@ -21,7 +21,7 @@ const HomePageLayout = styled.div`
 const HomePage = () => {
     return (
         <HomePageLayout>
-            <div style={{fontSize: "32px"}}>Робота Семка Андрія ІС-12</div>
+            <div style={{fontSize: "32px"}}>Робота Снігура Павла ІС-12</div>
             <div style={{width: "100%"}}>База даних: MsSQL<br />Фронтенд: TypeScript React<br />Бекенд: Express.js</div>
             <img src={task} alt="" />
         </HomePageLayout>
