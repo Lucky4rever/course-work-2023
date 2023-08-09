@@ -23,7 +23,7 @@ export default class EmploeesTable extends React.Component {
   };
 
   EmploeesTableRow: React.FC<Employee> = ({ id, name, position }) => {
-    const { apiBaseUrl } = React.useContext(ApiContext);
+    const { apiBaseUrl } = ApiContext;
     return (
       <>
         <div>{id}</div>

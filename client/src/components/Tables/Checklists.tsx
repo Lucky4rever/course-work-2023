@@ -28,7 +28,7 @@ export default class ChecklistsTable extends React.Component {
   };
 
   ChecklistsTableRow: React.FC<Checklist> = ({ id, date, conductor, itinerary, issued, returned, receipts, cashier }) => {
-    const { apiBaseUrl } = React.useContext(ApiContext);
+    const { apiBaseUrl } = ApiContext;
     return (
       <>
         <div>{id}</div>

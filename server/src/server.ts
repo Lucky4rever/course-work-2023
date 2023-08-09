@@ -13,7 +13,6 @@ const corsOptions: cors.CorsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-
 app.get("/api/employees", async (req, res) => await getEmployees(req, res));
 app.get("/api/itineraries", async (req, res) => await getItineraries(req, res));
 app.get("/api/checklists", async (req, res) => await getChecklists(req, res));
@@ -25,7 +24,6 @@ app.delete("/api/itineraries/d/:id", async (req, res) => await deleteItineraries
 app.delete("/api/checklists/d/:id", async (req, res) => await deleteChecklists(req, res));
 app.delete("/api/collectors/d/:id", async (req, res) => await deleteCollectors(req, res));
 app.delete("/api/dco/d/:id", async (req, res) => await deleteDCO(req, res));
-
 
 app.post("/api/employees/add", async (req, res) => await postEmployees(req, res));
 app.post("/api/itineraries/add", async (req, res) => await postItineraries(req, res));

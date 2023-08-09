@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import ContextTable from "./components/ContextTable";
-import { ChecklistsTable, EmploeesTable, CollectorsTable, ItinerariesTable } from "./components/Tables";
-import CashOrdersTable from "./components/Tables/DCO";
-import HomePage from "./components/HomePage";
-import { CreateCollector, CreateEmployee, CreateItinerary, CreateDCO, CreateChecklist } from "./components/CreateRows";
+import { HomePage, ContextTable } from "./pages";
+import { ChecklistsTable, EmploeesTable, CollectorsTable, ItinerariesTable, DCOTable } from "./components/Tables";
+import { CreateChecklist, CreateEmployee, CreateCollector, CreateItinerary, CreateDCO } from "./components/CreateRows";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -45,7 +43,7 @@ const AppRoutes = createBrowserRouter([
   },
   {
     path: "/dco/",
-    element: <ContextTable component={CashOrdersTable} />
+    element: <ContextTable component={DCOTable} />
   },
   {
     path: "/dco/add/",

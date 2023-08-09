@@ -23,7 +23,7 @@ export default class ItinerariesTable extends React.Component {
   };
 
   ItinetrariesTableRow: React.FC<Itinerary> = ({ id, number, name }) => {
-    const { apiBaseUrl } = React.useContext(ApiContext);
+    const { apiBaseUrl } = ApiContext;
     return (
       <>
         <div>{id}</div>

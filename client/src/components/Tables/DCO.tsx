@@ -30,7 +30,7 @@ export default class CashOrdersTable extends React.Component {
   };
 
   DCOTableRow: React.FC<CashOrder> = ({ id, date, sum, basis, sender, receiver, destinationCode, analyticalAccountingCode, corespondingAccount, EDRPOU }) => {
-    const { apiBaseUrl } = React.useContext(ApiContext);
+    const { apiBaseUrl } = ApiContext;
     return (
       <>
         <div>{id}</div>

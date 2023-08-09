@@ -22,7 +22,7 @@ export default class CollectorsTable extends React.Component {
   };
 
   CollectorsTableRow: React.FC<Collector> = ({ id, name }) => {
-    const { apiBaseUrl } = React.useContext(ApiContext);
+    const { apiBaseUrl } = ApiContext;
     return (
       <>
         <div>{id}</div>
